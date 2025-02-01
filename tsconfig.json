@@ -1,0 +1,39 @@
+{
+    "compilerOptions": {
+      /* Basic Options */
+      "target": "ES2022",                   // Specify ECMAScript target version
+      "module": "commonjs",                 // Use CommonJS modules (Node.js default)
+      "outDir": "./dist",                   // Output directory for compiled JS files
+      "rootDir": "./src",                   // Root directory for source files
+      "strict": true,                       // Enable all strict type-checking options
+      "esModuleInterop": true,              // Allow default imports from modules with no default export
+      "skipLibCheck": true,                 // Skip type checking of declaration files
+      "forceConsistentCasingInFileNames": true, // Ensure consistent casing in file names
+  
+      /* Module Resolution Options */
+      "moduleResolution": "node",           // Use Node.js style module resolution
+      "baseUrl": "./src",                   // Base directory for resolving non-relative module names
+      "paths": {                            // Path aliases for easier imports
+        "@config/*": ["config/*"],
+        "@controllers/*": ["controllers/*"],
+        "@models/*": ["models/*"],
+        "@routes/*": ["routes/*"],
+        "@services/*": ["services/*"],
+        "@middleware/*": ["middleware/*"],
+        "@utils/*": ["utils/*"],
+        "@types/*": ["types/*"]
+      },
+  
+      /* Advanced Options */
+      "emitDecoratorMetadata": true,        // Emit design-type metadata for decorators
+      "experimentalDecorators": true,       // Enable experimental support for decorators
+      "resolveJsonModule": true,            // Allow importing JSON modules
+      "allowSyntheticDefaultImports": true, // Allow default imports from modules with no default export
+  
+      /* Source Map Options */
+      "sourceMap": true,                    // Generate source maps for debugging
+      "inlineSources": true                 // Include source files in source maps
+    },
+    "include": ["src/**/*"],                // Include all files in the src directory
+    "exclude": ["node_modules", "dist"]     // Exclude node_modules and dist directories
+  }
